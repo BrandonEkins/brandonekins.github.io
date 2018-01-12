@@ -1,0 +1,28 @@
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+</head>
+<div id="chartContainer" style="width:70%; margin-left:15%">
+    <canvas id="myChart"></canvas>
+</div>
+<script>
+    document.getElementById("chartContainer").style.height = window.getComputedStyle(document.getElementById("chartContainer"), null)["width"];
+    var Labels = ["Madyline", "Brandon","Nate"]
+    var Colors = ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
+    var data = [300, 50, 100]
+    new Chart(
+        document.getElementById("myChart"), 
+        {
+            "type": "pie",
+            "data": {
+                "labels": Labels,
+                "datasets": [
+                    {
+                        "data": data,
+                        "backgroundColor": Colors
+                    }
+                ]
+            }
+        }
+    );
+    
+</script>
