@@ -1,10 +1,13 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+    
 </head>
-<div id="chartContainer" style="width:70%; margin-left:15%">
+<div id="chartContainer" style="width:300px; margin-left:100px; margin-top:100px; position:absolute">
     <canvas id="myChart"></canvas>
-    <img src="Arrow.png" id="arrow">
+    
 </div>
+<img src="Arrow.png" style="width:150px; margin-left:250px; margin-top:100px; position:absolute" id="arrow">
+
 <script>
     document.getElementById("chartContainer").style.height = window.getComputedStyle(document.getElementById("chartContainer"), null)["width"];
     var Labels = ["Madyline", "Brandon","Nate"]
