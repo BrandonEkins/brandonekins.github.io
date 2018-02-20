@@ -1,17 +1,25 @@
-#arrow{
+.arrow{
     width:194px;
     height:25px;
     margin-left:253px; 
     margin-top:179px;
     position:absolute;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
 }
 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+.arrowTransform{
+    width:194px;
+    height:25px;
+    margin-left:253px; 
+    margin-top:179px;
+    position:absolute;
+    -webkit-animation:spin 4s cubic-bezier(.17,.79,.68,1) 1;
+    -moz-animation:spin 4s cubic-bezier(.17,.79,.68,1) 1;
+    animation:spin 4s cubic-bezier(.17,.79,.68,1) 1;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(720deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(720deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(720deg); transform:rotate(720deg); } }
 
 #chartContainer{
     margin-top:100px; 
